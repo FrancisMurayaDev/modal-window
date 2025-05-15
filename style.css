@@ -48,6 +48,18 @@ h1 {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 515px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  h1 {
+    display: none;
+  }
+}
+
 p {
   font-size: 1.8rem;
 }
@@ -64,12 +76,17 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+
+@media screen and (max-width: 442px) {
+  .modal {
+    width: 90%;
+  }
 }
 
 .overlay {
